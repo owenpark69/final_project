@@ -1,0 +1,5 @@
+.env
+.DS_Store
+metals_query_cache.pkl
+__pycache__/
+*.pyc
