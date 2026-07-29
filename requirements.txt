@@ -1,0 +1,10 @@
+mp-api
+pymatgen
+matminer
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+tqdm
+python-dotenv

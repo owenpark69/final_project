@@ -32,7 +32,7 @@ The notebook loads the key via `load_dotenv()`; it is never hardcoded in any cel
 
 ## Running the notebook
 
-This project is a single notebook: `dos_ef_superconductor_screening_7.ipynb`. Run all cells top to bottom (Kernel → Restart & Run All):
+This project is a single notebook: `dos_ef_superconductor_screening.ipynb`. Run all cells top to bottom (Kernel → Restart & Run All):
 
 1. **Part 1 — Setup:** imports, load API key from `.env`
 2. **Part 2 — Query experimentally observed metals:** Materials Project summary search, `theoretical=False`, `band_gap == 0`
@@ -47,7 +47,7 @@ This project is a single notebook: `dos_ef_superconductor_screening_7.ipynb`. Ru
 11. **Part 11 — Lasso feature selection:** which MAGPIE/crystal-system descriptors carry predictive weight
 12. **Part 12 (optional) — DOS(E_F) by crystal system:** log-scaled violin plot
 
-Raw query results are cached to `metals_query_cache.pkl` after the first run so re-running the notebook doesn't re-hit the Materials Project API. Delete this file to force a fresh query (e.g. after changing filter criteria).
+Raw query results are cached to `metals_query_cache.pkl` after the first run so re-running the notebook doesn't re-hit the Materials Project API. This cache file is ~72 MB, so it is excluded from the repo via `.gitignore` — it is generated automatically the first time Part 2 runs (requires a valid `MP_API_KEY` and internet access) and is not needed to clone or set up the project. Delete it to force a fresh query (e.g. after changing filter criteria).
 
 > **Note:** this notebook was not executed in the authoring environment (no network access to the Materials Project API there). Run it locally or on a machine with internet access and a valid API key.
 
