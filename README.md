@@ -61,7 +61,7 @@ The main diagnostic (Parts 8–9) compares ordinary K-fold cross-validation agai
 
 Part 11's Lasso feature-importance plot then narrows the full MAGPIE + crystal-system descriptor set down to the subset that actually carries predictive weight for DOS(E_F).
 
-![Lasso Lars Regression for top-20 most important crystal-system MAGPIE features](figures/fig1.png)
+![Lasso Lars Regression for top-20 most important crystal-system MAGPIE features](figures/fig3.png)
 
 DOS(E_F) is a *screening* proxy, not a substitute for a full superconductivity prediction: high-scoring candidates from this pipeline are best treated as a shortlist for follow-up electron-phonon coupling calculations (e.g. DFPT/EPW), not as final T_c predictions.
 
